@@ -14,8 +14,8 @@ public class ReverseLines {
       final String line = input.nextLine();
       stack.push(line);
       }
-      while(!Stack.isEmpty(){
-      System.out.println(stack.pop())
+      while(!stack.isEmpty()){
+      System.out.println(stack.pop());
     }
 
 

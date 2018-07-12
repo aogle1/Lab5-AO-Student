@@ -45,13 +45,14 @@ public class LinkedStack<E> implements IStack<E> {
   @Override
   public List<E> asList() {
       List<E> nodeList = new ArrayList<>();
-      while (top != null) {
-          nodeList.add(top.data);
-          top = top.next;
+      Node<E> tempTop = top;
+      while (tempTop != null) {
+          nodeList.add(tempTop.data);
+          tempTop = tempTop.next;
       }
       return nodeList;
   }
-
+//
 
     // TODO implement using an ArrayList.  Populate the ArrayList with the stack values, without deconstructing the stack!
     // TODO add any instance variable(s) required to support this
